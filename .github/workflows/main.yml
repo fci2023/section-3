@@ -16,3 +16,6 @@ jobs:
       - name: "Image building"
         run: docker build -t os2021/section3 .
 
+      - name: "Image Pushing"
+        run: docker push os2021/section3
+
