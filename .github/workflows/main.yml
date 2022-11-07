@@ -8,13 +8,11 @@ jobs:
     runs-on: Ubuntu-latest
 
     steps:
-      - name: "Listing all the files"
-        run: ls
-
       - uses: actions/checkout@v3
-      - name: "Listing all the files"
-        run: ls
+
+      - name: "Login"
+        run: docker login --username os2021 --password ${{ secrets.TOKEN }}
 
       - name: "Image building"
-        run: docker build -t ertre .
+        run: docker build -t os2021/section3 .
 
