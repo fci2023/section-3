@@ -1,1 +1,16 @@
+on:
+  push:
+    branches:
+      - master
+	
+
+jobs:
+  build:
+    runs-on: Ubuntu-latest
+
+    steps:
+      - name: "Listing all the files"
+        run: ls
+      
+  
 
