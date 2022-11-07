@@ -2,7 +2,6 @@ on:
   push:
     branches:
       - master
-	
 
 jobs:
   build:
@@ -11,6 +10,4 @@ jobs:
     steps:
       - name: "Listing all the files"
         run: ls
-      
-  
 
