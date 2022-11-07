@@ -11,3 +11,7 @@ jobs:
       - name: "Listing all the files"
         run: ls
 
+      - uses: actions/checkout@v3
+      - name: "Listing all the files"
+        run: ls
+
